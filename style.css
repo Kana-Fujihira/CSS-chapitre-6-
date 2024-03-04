@@ -45,17 +45,17 @@ span {
 
 
 /* -----version tablette------ */
-@media screen and (width>=1024px) {
+@media screen and (min-width: 1024px) {
 
 
     nav {
-        display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         background-color: #A306B6;
     }
 
     ul {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         list-style: none;
@@ -74,11 +74,13 @@ span {
 
 /* -----version desktop------ */
 
-@media screen and (width>=1200px) {
+@media screen and (min-width:1200px) {
 
     nav {
         display: flex;
-        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         background-color: #A306B6;
     }
 
